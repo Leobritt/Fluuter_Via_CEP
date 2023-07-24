@@ -15,8 +15,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   Cep? _cepData;
 
-  final TextEditingController _cepController =
-      TextEditingController(); // Novo controller para o campo de entrada
+  // Novo controller para o campo de entrada
 
   Future<void> searchCep(String cep) async {
     // Montando a URL da API

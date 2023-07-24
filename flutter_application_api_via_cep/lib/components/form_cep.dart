@@ -21,6 +21,11 @@ class _FormCepState extends State<FormCep> {
         child: Column(
           children: [
             TextFormField(
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                hintText: 'Enter a search term',
+              ),
+              keyboardType: TextInputType.number,
               controller: _searchController,
               autofocus: true,
               validator: (value) {
